@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "465210248346",
+    "firebase_url": "https://piggybank-baf52.firebaseio.com",
+    "project_id": "piggybank-baf52",
+    "storage_bucket": "piggybank-baf52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465210248346:android:aafece6c7135e9d5",
+        "android_client_info": {
+          "package_name": "com.mwidlok.piggybank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465210248346-v9u10ndavqp1dofac6kaptgb977u02b1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mwidlok.piggybank",
+            "certificate_hash": "954c82cc2eb73e45cc3a4454c3277801fd851c22"
+          }
+        },
+        {
+          "client_id": "465210248346-j7cu72go1uu9bolu5rovju6rs5g12o5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuvlDmyLBCzH4oEjP72qoBGwxzmTrb4_8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465210248346-j7cu72go1uu9bolu5rovju6rs5g12o5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
