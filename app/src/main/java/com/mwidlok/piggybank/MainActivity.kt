@@ -12,9 +12,48 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var sum : Double = 0.0
+        var newSum : String = ""
+
+        fun increaseSum(transaction : Transaction) : Double
+        {
+            sum += transaction.amount
+            newSum = "%.2f".format(sum)
+            Log.i("PeggyBank","New sum is $newSum.")
+            tvSum.setText(newSum)
+            return sum
+        }
+
         btn1Cent.setOnClickListener {
-            Log.i("PiggyBank","Button 1 Cent clicked")
-            var transaction = Transaction(0.01)
+            increaseSum(Transaction(0.01))
+        }
+
+        btn2Cent.setOnClickListener {
+            increaseSum(Transaction(0.02))
+        }
+
+        btn5Cent.setOnClickListener {
+            increaseSum(Transaction(0.05))
+        }
+
+        btn10Cent.setOnClickListener {
+            increaseSum(Transaction(0.1))
+        }
+
+        btn20Cent.setOnClickListener {
+            increaseSum(Transaction(0.2))
+        }
+
+        btn50Cent.setOnClickListener {
+            increaseSum(Transaction(0.5))
+        }
+
+        btn1Euro.setOnClickListener {
+            increaseSum(Transaction(1.0))
+        }
+
+        btn2Euro.setOnClickListener {
+            increaseSum(Transaction(2.0))
         }
     }
 }
