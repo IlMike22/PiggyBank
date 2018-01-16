@@ -19,16 +19,11 @@ class MainActivity : AppCompatActivity() {
         var sum : Double = 0.0
         var newSum : String = ""
 
-        var mDatabase: DatabaseReference
-        mDatabase = FirebaseDatabase.getInstance().reference
-        mDatabase.child("id").setValue("Blubb")
-
-
         fun increaseSum(transaction : Transaction) : Double
         {
             sum += transaction.amount
             newSum = "%.2f Euro".format(sum)
-            Log.i("PeggyBank","New sum is $newSum.")
+            Log.i("PiggyBank","New sum is $newSum.")
             tvSum.setText(newSum)
             return sum
         }
@@ -40,35 +35,35 @@ class MainActivity : AppCompatActivity() {
         }
 
         btn1Cent.setOnClickListener {
-            increaseSum(Transaction(0.01, getCurrentDate(), mDatabase))
+            increaseSum(Transaction( 0.01, getCurrentDate()))
         }
 
         btn2Cent.setOnClickListener {
-            increaseSum(Transaction(0.02, getCurrentDate(), mDatabase))
+            increaseSum(Transaction(0.02, getCurrentDate()))
         }
 
         btn5Cent.setOnClickListener {
-            increaseSum(Transaction(0.05, getCurrentDate(), mDatabase))
+            increaseSum(Transaction(0.05, getCurrentDate()))
         }
 
         btn10Cent.setOnClickListener {
-            increaseSum(Transaction(0.1, getCurrentDate(), mDatabase))
+            increaseSum(Transaction( 0.1, getCurrentDate()))
         }
 
         btn20Cent.setOnClickListener {
-            increaseSum(Transaction(0.2, getCurrentDate(), mDatabase))
+            increaseSum(Transaction( 0.2, getCurrentDate()))
         }
 
         btn50Cent.setOnClickListener {
-            increaseSum(Transaction(0.5, getCurrentDate(), mDatabase))
+            increaseSum(Transaction(0.5, getCurrentDate()))
         }
 
         btn1Euro.setOnClickListener {
-            increaseSum(Transaction(1.0, getCurrentDate(), mDatabase))
+            increaseSum(Transaction(1.0, getCurrentDate()))
         }
 
         btn2Euro.setOnClickListener {
-            increaseSum(Transaction(2.0, getCurrentDate(), mDatabase))
+            increaseSum(Transaction(2.0, getCurrentDate()))
         }
     }
 }
