@@ -2,10 +2,7 @@ package com.mwidlok.piggybank
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract
 import android.util.Log
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import com.mwidlok.piggybank.models.Transaction
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
